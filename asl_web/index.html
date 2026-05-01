@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ASL Hand Sign Recognition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome Section -->
+  <section id="welcome" class="active">
+    <div class="container">
+      <h1>ASL Hand Sign Recognition</h1>
+      <p class="desc">
+        A powerful real-time system that converts American Sign Language hand gestures
+        into text and speech. Improve communication, accessibility, and interaction using AI.
+      </p>
+
+      <div class="features">
+        <div class="card">Real-time Hand Tracking</div>
+        <div class="card">Sentence Builder Controls</div>
+        <div class="card">Text-to-Speech Output</div>
+      </div>
+
+      <button id="startBtn" class="start-btn">Start Project</button>
+    </div>
+  </section>
+
+
+  <!-- Recognition Section -->
+ <section id="recognition">
+  <h1>Hand Recognition Live</h1>
+
+  <h2>Current Letter: <span id="currentLetter">-</span></h2>
+  <h3>Sentence: <span id="sentenceBox"></span></h3>
+
+  <div class="layout">
+    
+    <!-- Webcam -->
+    <div class="video-box">
+      <video id="video" autoplay></video>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls-box">
+      <h2>Controls</h2>
+      <ul>
+        <li><b>ENTER</b> — Add predicted letter</li>
+        <li><b>SPACE</b> — Add space</li>
+        <li><b>BACKSPACE</b> — Delete last character</li>
+        <li><b>C</b> — Clear sentence</li>
+        <li><b>S</b> — Speak sentence</li>
+        <li><b>Q</b> — Quit</li>
+      </ul>
+      <h3>Tips</h3>
+      <p>• Keep your hand inside the frame<br>
+         • Ensure good lighting<br>
+         • Hold gestures steady for better accuracy</p>
+    </div>
+
+    <!-- ASL Reference Chart -->
+    <div class="asl-chart-box">
+      <h3>ASL Alphabet Chart</h3>
+      <img src="asl_chart.png" alt="ASL Alphabet" class="asl-chart">
+    </div>
+
+  </div>
+
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
