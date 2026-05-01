@@ -1,61 +1,71 @@
-Hand Gesture Recognition
+✋ Hand Gesture Recognition System
+<p align="center"> Real-time hand gesture recognition using computer vision and MediaPipe </p> <p align="center"> <img src="https://img.shields.io/badge/Python-3.x-blue" /> <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green" /> <img src="https://img.shields.io/badge/MediaPipe-Hand%20Tracking-orange" /> <img src="https://img.shields.io/badge/Status-Active-success" /> </p>
+📌 Overview
 
-A real-time hand gesture recognition system built using Python and computer vision techniques. The project detects and tracks hand movements through a webcam and interprets gestures based on hand landmarks.
+This project implements a real-time hand gesture recognition system using a webcam feed. It detects hand landmarks and classifies gestures based on finger positions.
 
-This project focuses on enabling simple and effective touchless interaction using vision-based methods.
+The goal is to explore touchless human-computer interaction using lightweight and efficient computer vision techniques.
 
-Overview
-
-The system captures live video input and processes each frame to detect hand landmarks using MediaPipe. Based on the relative positions of fingers, it identifies predefined gestures. The implementation is lightweight and designed to be easily extended for custom use cases.
-
-Tech Stack
-Language: Python
-Libraries:
-OpenCV
-MediaPipe
-NumPy
-Working Principle
-Capture video stream from webcam
-Detect hand and extract 21 landmark points
-Analyze finger positions and relative distances
-Classify gesture based on predefined logic
-Display or trigger corresponding output
-Getting Started
-Clone the repository
+✨ Key Features
+Real-time hand detection and tracking
+Landmark-based gesture recognition (21 key points)
+Fast and efficient processing
+Modular and easy-to-extend code structure
+⚙️ Tech Stack
+Category	Tools Used
+Language	Python
+Computer Vision	OpenCV
+Hand Tracking	MediaPipe
+Utilities	NumPy
+🧠 System Workflow
+Webcam Input → Hand Detection → Landmark Extraction → Gesture Logic → Output
+📁 Project Structure
+hand-gesture-recognition/
+│
+├── main.py            # Main execution file
+├── detector.py        # Hand detection module
+├── gestures.py        # Gesture recognition logic
+├── requirements.txt   # Project dependencies
+└── README.md
+🚀 Installation & Setup
+1. Clone Repository
 git clone https://github.com/your-username/hand-gesture-recognition.git
 cd hand-gesture-recognition
-Install dependencies
+2. Install Dependencies
 pip install -r requirements.txt
-Run the project
+3. Run the Application
 python main.py
-Project Structure
-main.py            # Entry point
-detector.py        # Hand detection module
-gestures.py        # Gesture classification logic
-requirements.txt   # Dependencies
-Features
-Real-time hand detection and tracking
-Gesture recognition based on landmark analysis
-Lightweight and efficient implementation
-Easy to modify and extend
-Applications
-Gesture-based control systems
-Human-computer interaction projects
-Educational and learning purposes
-Prototype development for touchless interfaces
-Limitations
-Performance depends on lighting conditions
+📊 Example Gestures
+👍 Thumbs Up
+✋ Open Palm
+✊ Fist
+☝️ Pointing
+📸 Output Preview
+
+(Add screenshots or GIF here for better presentation)
+
+⚠️ Limitations
+Sensitive to lighting conditions
 Limited gesture set (rule-based detection)
-Accuracy may vary with hand orientation
-Future Scope
-Integration of machine learning models for better accuracy
-Support for dynamic (motion-based) gestures
+Accuracy may vary with camera quality
+🔮 Future Improvements
+Integration with ML/DL models
+Dynamic gesture recognition
 Multi-hand tracking
-Integration with real-world applications (e.g., cursor control)
-Author
+Real-world application integration (mouse control, IoT, etc.)
+🤝 Contribution
+
+Contributions are welcome. Feel free to fork and submit a pull request.
+
+📄 License
+
+This project is licensed under the MIT License.
+
+👤 Author
 
 Yesh Chandra Joshi
+MCA Student | Computer Vision Enthusiast
 
-⭐ Note
+⭐ Support
 
-This project is primarily built for learning and demonstration purposes. It can be further enhanced into a more robust system with advanced models and real-world integrations.
+If you find this project useful, consider giving it a ⭐ on GitHub.
